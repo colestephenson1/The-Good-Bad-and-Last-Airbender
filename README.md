@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Good, The Bad, and The Last Airbender
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Table of Contents
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Organizational Resources](#organizational-resources)
+  - [Sources](#sources)
+  - [Contributors](#contributors)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
+  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Technologies
+  - Next.js
+  - JavaScript
+  - Node.js
+  - Express.js
+  - Cypress
+  - Router
+  - HTML
+  - CSS
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
+- Listen to the songs within the application through an embedded Spotify player.
+- Filter songs in a decade by mood.
+- Find out more information about the artist/song.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Possible Future Extensions
+- Create a favorites list which can exported to Spotify as a playlist.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Set Up
+- Deployed application: https://one-hit-wonderz-one.vercel.app/
+- Deployed API: https://new-ohw-api.vercel.app/songs
 
-## Learn More
+## Organizational Resources
+- [github project board](https://github.com/users/colestephenson1/projects/1)
+- [data collection google doc](https://docs.google.com/document/d/1MzZpRZ_WjslrsORh_CPJMzDTMtxBnPnhwczY1wrO8eg/edit)
+- Wireframe ![gbla_wireframe](https://user-images.githubusercontent.com/102827145/215295636-d871efbf-344d-4364-8449-750917a10405.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [CSS-TRICKS](https://css-tricks.com/)
+ 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributors
+  - [Cole Stephenson](https://github.com/colestephenson1)
