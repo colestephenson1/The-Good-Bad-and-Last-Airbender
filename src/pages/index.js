@@ -1,11 +1,13 @@
 import styles from '@/styles/Home.module.css'
 import Layout from '@/components/Layout/Layout'
+import HomePage from '@/components/HomePage/HomePage'
 
 export default function Home({movies}) {
-
+  console.log(movies)
   return (
     <div>
       <Layout>
+        <HomePage/>
       </Layout>
     </div> 
   )

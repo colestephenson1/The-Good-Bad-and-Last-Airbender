@@ -1,0 +1,10 @@
+.navbar {
+   width: 100vw;
+   height: 10vh;
+}
+.navbar_options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100%;
+}

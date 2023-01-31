@@ -1,0 +1,9 @@
+.handsome_mf {
+    border-radius: 50%;
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
