@@ -1,9 +1,26 @@
+
 .handsome_mf {
     border-radius: 50%;
 }
 
 .homepage {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
+.intro_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    align-items: center;
+}
+
+.intro_section2 {
+    height: 100vh;
+}
+
+/* .intro_scroll_link {
+} */
