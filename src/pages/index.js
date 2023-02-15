@@ -6,8 +6,8 @@ export default function Home({movies}) {
 
   return (
     <div>
-      <Layout>
-        <HomePage/>
+      <Layout key='layout'>
+        <HomePage movies={movies} key='homepage'/>
       </Layout>
     </div> 
   )
