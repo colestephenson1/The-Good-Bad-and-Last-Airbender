@@ -14,7 +14,7 @@ const NavBar = () => {
             <h3>Horror</h3>
             <h3>Mystery</h3>
             <h3>Thriller</h3>
-            <h3>The Rankings</h3>
+            <Link href={'/movies/rankings'}><h3>The Rankings</h3></Link>
         </section>
     </div>
   )

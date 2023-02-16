@@ -59,7 +59,6 @@
 }
 
 .tertiary_intro_movie_poster{
-    height: 80%;
-    width: 25%;
-    /* margin-top: 5vh; */
+    height: 80vh;
+    width: 25vw;
 }

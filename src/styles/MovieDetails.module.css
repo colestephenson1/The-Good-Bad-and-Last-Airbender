@@ -1,0 +1,33 @@
+.movie_details_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+}
+
+.movie_poster {
+    height: 80vh;
+    width: 30vw;
+    margin-top: -1em;
+}
+
+.greater_details_box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 10em;
+}
+
+.trailer {
+    height: 70vh;
+    width: 80vw;
+}
