@@ -1,4 +1,14 @@
 .header {
+    height: 15vh;
+    width: 100%;
     display: flex;
     justify-content: center;
+    font-family: 'Times New Roman', serif;
+    color: white;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+    background-color: rgb(0, 0, 69);
 }

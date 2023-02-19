@@ -1,5 +1,6 @@
 
 .handsome_mf {
+    margin-top: 2rem;
     border-radius: 50%;
 }
 
@@ -10,20 +11,38 @@
     align-items: center;
 }
 
-.intro_section {
+.primary_text_box {
     display: flex;
     flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.external_link {
+    height: 7.5vh;
+    width: 2.5vw;
+}
+
+.intro_section {
+    display: flex;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 85vh;
+    width: 100vw;
     align-items: center;
+    background-color: silver;
 }
 
 .intro_section2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
     height: 100vh;
     width: 100vw;
+    background-color: #2f3d53;
 }
 
 .movie_poster {
@@ -48,6 +67,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: #e1c196;
 }
 
 .movie_posters_box_intro_tertiary {
