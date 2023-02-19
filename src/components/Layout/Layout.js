@@ -1,12 +1,11 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
 import Header from '../Header/Header';
+// import css from '../../styles/Layout.module.css';
 
 const Layout = ( {children} ) => {
     return (
       <div>
         <Header/>
-        <NavBar/>
         {children}
       </div>
   )

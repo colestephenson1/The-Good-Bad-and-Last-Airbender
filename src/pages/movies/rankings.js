@@ -26,9 +26,6 @@ const Rankings = () => {
     }))
   }
 
-
- 
-
   return (
     <Layout>
         <section>
@@ -40,4 +37,4 @@ const Rankings = () => {
 
 
 
-export default Rankings
+export default Rankings;

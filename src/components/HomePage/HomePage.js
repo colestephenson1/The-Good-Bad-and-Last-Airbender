@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import css from '../../styles/HomePage.module.css';
 import Link from "next/link";
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const HomePage = ({movies}) => {
 
@@ -21,7 +22,27 @@ const HomePage = ({movies}) => {
     <div className={css.homepage}>
         <section id="primary_section" className={css.intro_section} key={'primarySection'}>
             <img className={css.handsome_mf} key={'handsomeMF'} src="https://avatars.githubusercontent.com/u/102827145?v=4"/>
-            <Link href="#secondary_section" scroll={false}><h2 className={css.intro_scroll_link} key={'secondaryLink'}>Hi! My name is Cole. I love to code. &#8595;</h2></Link>
+            <section className={css.primary_text_box}>
+                <Link href="#secondary_section" scroll={false}><h2 className={css.intro_scroll_link} key={'secondaryLink'}>Hi! My name is Cole. I love to code. &#8595;</h2></Link>
+                <section className={css.links}>
+                    <a
+                        className={css.external_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.linkedin.com/in/cole-stephenson-99688a240/"
+                        aria-label="Cole Stephenson LinkedIn Website">
+                            <AiFillLinkedin className={css.external_link} />
+                    </a>
+                    <a
+                        className={css.external_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/colestephenson1"
+                        aria-label="Cole Stephenson LinkedIn Website">
+                            <AiFillGithub className={css.external_link}/>
+                    </a>   
+                </section>
+            </section>
         </section>
         <section id="secondary_section" className={css.intro_section2} key={'secondarySection'}>
             <section className={css.intro_section2_text_box} key={'secondarySectionTextBox'}>

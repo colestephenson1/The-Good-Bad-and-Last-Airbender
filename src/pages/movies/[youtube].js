@@ -1,17 +1,23 @@
 import React from 'react';
 import Layout from '../../components/Layout/Layout';
 import css from "../../styles/MovieDetails.module.css";
+import Link from "next/link";
 
 const MovieDetails = ({ movie }) => {
+
     const { title, director, lead_actors, youtube, poster, release_year, runtime, rating, review } = movie;
+
   return (
       <Layout>
-        <section className={css.movie_details_box}>
-          <h2>{title}</h2>
+        <section className={css.movie_details_box} >
           <iframe src={`https://www.youtube.com/embed/${youtube}`} className={css.trailer}></iframe>
-          <section className={css.greater_details_box}>
+          <Link href="#greater-details-box"><h2>&#8595;</h2></Link>
+          <section id="greater-details-box"className={css.greater_details_box}>
             <img src={poster} className={css.movie_poster}/>
             <section className={css.info_box}>
+              <h3>
+                {title}
+              </h3>
               <text>
                 Lead Actors:
                 {lead_actors.reduce((actors, actor) => {
@@ -25,7 +31,7 @@ const MovieDetails = ({ movie }) => {
                 Release Year: {release_year}
               </text>
               <text>
-                Runtime: {runtime}
+                Runtime: {runtime} minutes
               </text>
               <text>
                 {review} 

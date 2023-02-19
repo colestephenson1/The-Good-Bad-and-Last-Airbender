@@ -1,20 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from '../../styles/NavBar.module.css'
+import css from '../../styles/NavBar.module.css'
 
 const NavBar = () => {
   return (
-    <div className={styles.navbar}>
-        <Link href='/'><img className='logo'/></Link>
-        <section className={styles.navbar_options}>
-            <h3>Action</h3>
-            <h3>Comedy</h3>
-            <h3>Drama</h3>
-            <h3>Fantasy</h3>
-            <h3>Horror</h3>
-            <h3>Mystery</h3>
-            <h3>Thriller</h3>
-            <Link href={'/movies/rankings'}><h3>The Rankings</h3></Link>
+    <div className={css.navbar}>
+        <Link href="/"><h1>The Good, The Bad, and The Last Airbender</h1></Link>
+        <section className={css.navbar_options}>
+            <Link href='/moviesByGenre/Action'><h3 className={css.navbar_option}>Action</h3></Link>
+            <Link href='/moviesByGenre/Drama'><h3 className={css.navbar_option}>Drama</h3></Link>
+            <Link href='/moviesByGenre/Fantasy'><h3 className={css.navbar_option}>Fantasy</h3></Link>
+            <Link href='/moviesByGenre/Horror'><h3 className={css.navbar_option}>Horror</h3></Link>
+            <Link href='/moviesByGenre/Mystery'><h3 className={css.navbar_option}>Mystery</h3></Link>
+            <Link href='/moviesByGenre/Thriller'><h3 className={css.navbar_option}>Thriller</h3></Link>
+            <Link href='/movies/rankings'><h3 className={css.navbar_option}>The Rankings</h3></Link>
         </section>
     </div>
   )
