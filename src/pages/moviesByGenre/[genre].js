@@ -1,6 +1,7 @@
 import React from 'react';
 import GridMovie from '../../components/GridMovie/GridMovie';
 import Layout from '../../components/Layout/Layout';
+import css from '../../styles/MoviesByGenre.module.css';
 
 const FilteredMovies = ({ movies }) => {
     const filteredMovies = movies.sort((a,b) => b.rating - a.rating).map(movie => {
@@ -13,7 +14,9 @@ const FilteredMovies = ({ movies }) => {
     })
   return (
     <Layout>
+      <section className={css.movies_box}>
         {filteredMovies}
+      </section>
     </Layout>
   )
 }

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', serif;
+    font-size: 2vh;
     color: white;
     text-shadow:
         0.07em 0 black,

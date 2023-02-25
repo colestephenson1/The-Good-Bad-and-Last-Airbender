@@ -1,0 +1,7 @@
+.movies_box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vh;;
+    padding: 10vh;
+    background-color: silver;
+}

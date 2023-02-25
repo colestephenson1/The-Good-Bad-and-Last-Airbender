@@ -3,9 +3,9 @@
     justify-content: space-around;
     align-items: center;
     width: 80vw;
-    height: vh;
     padding: 10vh;
     border: 1px solid black;
+    background-color: #e1c196;
 }
 
 .poster {
