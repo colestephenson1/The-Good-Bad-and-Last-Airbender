@@ -1,15 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import css from '../../styles/MovieFormattedForRanking.module.css';
 
 const MovieFormattedForRanking = ({movie}) => {
 
-    const {poster, title, rating, youtube} = movie;
+    const {poster, title, rating, youtube, release_year} = movie;
 
   return (
-    <div>
-        <img src={poster}/>
-        <Link href={`/movies/${youtube}`}><h3>{title}</h3></Link>
-        <h3>{rating}</h3>
+    <div className={css.movie_formatted_for_ranking}>
+        <img src={poster} className={css.poster}/>
+        <Link href={`/movies/${youtube}`}><h3 className={css.title}>{title} ({release_year})</h3></Link>
+        <h3 className={css.rating}>&#11088;{rating}/10</h3>
     </div>
   )
 }

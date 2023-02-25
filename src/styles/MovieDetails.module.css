@@ -6,6 +6,8 @@
     height: 200vh;
     width: 100vw;
     scroll-behavior: smooth;
+    background-color: silver;
+    padding: 2vh;
 }
 
 .info_box{
@@ -20,18 +22,30 @@
 .movie_poster {
     height: 80vh;
     width: 30vw;
-    margin-top: -1em;
+    margin-top: 1em;
     align-self: flex-start;
 }
 
 .greater_details_box {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     width: 100vw;
+    height: 100vh;
     margin-top: 10em;
+    background-color: #e1c196;
 }
 
 .trailer {
     height: 70vh;
     width: 80vw;
+}
+
+.trailer_and_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 78vh;
+    width: 100vw;
 }

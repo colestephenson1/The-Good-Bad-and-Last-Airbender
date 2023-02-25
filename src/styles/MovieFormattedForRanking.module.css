@@ -1,0 +1,16 @@
+.movie_formatted_for_ranking {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: vh;
+    padding: 10vh;
+    border: 1px solid black;
+}
+
+.poster {
+    height: 100%;
+    width: 10vw;
+    border-style: groove;
+    border: 1px solid black;
+}

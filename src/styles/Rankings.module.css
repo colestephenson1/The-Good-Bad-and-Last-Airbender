@@ -1,0 +1,11 @@
+.rankings_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+}
+
+.rankings_greeting{
+    margin-top: -5vh;
+}

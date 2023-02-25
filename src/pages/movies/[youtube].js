@@ -10,8 +10,10 @@ const MovieDetails = ({ movie }) => {
   return (
       <Layout>
         <section className={css.movie_details_box} >
-          <iframe src={`https://www.youtube.com/embed/${youtube}`} className={css.trailer}></iframe>
-          <Link href="#greater-details-box"><h2>&#8595;</h2></Link>
+          <section className={css.trailer_and_link}>
+            <iframe src={`https://www.youtube.com/embed/${youtube}`} className={css.trailer}></iframe>
+            <Link href="#greater-details-box"><h2>&#8595;</h2></Link>
+          </section>
           <section id="greater-details-box"className={css.greater_details_box}>
             <img src={poster} className={css.movie_poster}/>
             <section className={css.info_box}>
