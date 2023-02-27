@@ -25,12 +25,13 @@
   - CSS
 
 ## Features
-- Listen to the songs within the application through an embedded Spotify player.
-- Filter songs in a decade by mood.
-- Find out more information about the artist/song.
+- Click on a movie to see additional details (trailer, lead actors, director, release year, runtime, review, rating)
+- Filter the movies by genre with NavBar button functionality
+- See a fully compiled ratings list of all the movies.
 
 ## Possible Future Extensions
-- Create a favorites list which can exported to Spotify as a playlist.
+- Have the movies by genre and the ratings list be filterable by release date (oldest to youngest and vice versa)
+- Connect to a relational database so that users can have a login, favorite movies, and contribute their own reviews.
 
 ## Set Up
 - Deployed application: https://the-good-bad-and-last-airbender.vercel.app/
@@ -43,6 +44,7 @@
   - [MDN](http://developer.mozilla.org/en-US/)
   - [W3Schools](https://www.w3schools.com/)
   - [CSS-TRICKS](https://css-tricks.com/)
+  - [Udemy](https://www.udemy.com/course/awesome-nextjs-with-react-and-node-amazing-portfolio-app/)
  
 
 ## Contributors
