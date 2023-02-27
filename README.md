@@ -13,7 +13,7 @@
   - [Contributors](#contributors)
 
 ## Introduction
-  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies!
+  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies! I wanted to bring my newly established skills in Next to an application that users could get active benefit from, even if it's movie reviews from an unqualified movies reviewer. That being said, the project utilizes multiple endpoints with server-side rendering, and is much more performant than React applications I have developed int he past. Enjoy!
 
 ## Technologies
   - Next.js
@@ -21,7 +21,6 @@
   - Node.js
   - Express.js
   - Cypress
-  - Router
   - HTML
   - CSS
 
@@ -34,12 +33,10 @@
 - Create a favorites list which can exported to Spotify as a playlist.
 
 ## Set Up
-- Deployed application: https://one-hit-wonderz-one.vercel.app/
-- Deployed API: https://new-ohw-api.vercel.app/songs
+- Deployed application: https://the-good-bad-and-last-airbender.vercel.app/
+- Deployed API: https://gbla-api.vercel.app/
 
 ## Organizational Resources
-- [github project board](https://github.com/users/colestephenson1/projects/1)
-- [data collection google doc](https://docs.google.com/document/d/1MzZpRZ_WjslrsORh_CPJMzDTMtxBnPnhwczY1wrO8eg/edit)
 - Wireframe ![gbla_wireframe](https://user-images.githubusercontent.com/102827145/215295636-d871efbf-344d-4364-8449-750917a10405.png)
 
 ## Sources
