@@ -13,7 +13,7 @@
   - [Contributors](#contributors)
 
 ## Introduction
-  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies! I wanted to bring my newly established skills in Next to an application that users could get active benefit from, even if it's movie reviews from an unqualified movies reviewer. That being said, the project utilizes multiple endpoints with server-side rendering, and is much more performant than React applications I have developed int he past. Enjoy!
+  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies! I wanted to bring my newly established skills in Next to an application that users could get active benefit from, even if it's movie reviews from an unqualified movies reviewer. That being said, the project utilizes multiple endpoints with server-side rendering, and is much more performant than React applications I have developed in the past. Enjoy!
 
 ## Technologies
   - Next.js
