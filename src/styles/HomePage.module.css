@@ -1,7 +1,20 @@
 
+@keyframes slideInLeft {
+    from {transform: translatex(-50vw) rotate(0deg);}
+    to {transform: translatex(0vw) rotate(360deg);}
+}
+
+@keyframes slideInRight {
+    from {transform: translatex(50vw);}
+    to {transform: translatex(0vw);}
+}
+
+
 .handsome_mf {
     margin-top: 2rem;
     border-radius: 50%;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
 }
 
 .homepage {
@@ -14,6 +27,8 @@
 .primary_text_box {
     display: flex;
     flex-direction: column;
+    animation-name: slideInRight;
+    animation-duration: 1s;
 }
 
 .links {
@@ -24,6 +39,15 @@
 .external_link {
     height: 7.5vh;
     width: 2.5vw;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0s;
+
+}
+
+.external_link:hover {
+    transform: translateY(-10px);
 }
 
 .intro_section {
@@ -32,7 +56,7 @@
     height: 85vh;
     width: 100vw;
     align-items: center;
-    background-color: silver;
+    background-color: lightblue;
 }
 
 .intro_section2 {
@@ -52,6 +76,16 @@
 
 .intro_scroll_link {
     text-decoration: none;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0s;
+}
+
+.intro_scroll_link:hover {
+    color:  navy;
+    transform: translateY(-10px);
+
 }
 
 .intro_section2_text_box {
@@ -59,6 +93,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0s;
+}
+
+.intro_section2_text_box:hover {
+    transform: translateY(-10px);
 }
 
 .intro_section3 {
@@ -67,7 +109,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #e1c196;
+    background-color: #ddeaee;
 }
 
 .movie_posters_box_intro_tertiary {
@@ -78,7 +120,16 @@
     width: 100vw;
 }
 
-.tertiary_intro_movie_poster{
+.tertiary_intro_movie_poster {
     height: 80vh;
     width: 25vw;
+    border: 1px solid black;
+}
+
+.tertiary_intro_movie_poster:hover {
+    border: 1px solid white;
+}
+
+.tertiary_link:hover{
+    color: #2f3d53;
 }

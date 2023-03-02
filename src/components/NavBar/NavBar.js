@@ -8,6 +8,7 @@ const NavBar = () => {
         <Link href="/"><h1>The Good, The Bad, and The Last Airbender</h1></Link>
         <section className={css.navbar_options}>
             <Link href='/moviesByGenre/Action'><h3 className={css.navbar_option}>Action</h3></Link>
+            <Link href='/moviesByGenre/Comedy'><h3 className={css.navbar_option}>Comedy</h3></Link>
             <Link href='/moviesByGenre/Drama'><h3 className={css.navbar_option}>Drama</h3></Link>
             <Link href='/moviesByGenre/Fantasy'><h3 className={css.navbar_option}>Fantasy</h3></Link>
             <Link href='/moviesByGenre/Horror'><h3 className={css.navbar_option}>Horror</h3></Link>

@@ -56,7 +56,7 @@ const HomePage = ({movies}) => {
             <img className={css.movie_poster} key={'pfPoster'} src="https://i5.walmartimages.com/asr/06ec9422-7ea9-42ee-b7da-499dd3e1ce2f.9f0ef34df5ae1895cb0d1b4e083b8496.jpeg"/>
         </section>
         <section id="tertiary_section" className={css.intro_section3} key={'tertiarySection'}>
-            <Link href='#header' key={'linkToTop'}><h2>Here's three movies to get you started. Click one, or click this &#8593; to head back to the top. You can choose a genre, or go to the rankings.</h2></Link>
+            <Link href='#header' key={'linkToTop'}><h2 className={css.tertiary_link}>Here's three movies to get you started. Click one, or click this &#8593; to head back to the top. You can choose a genre, or go to the rankings.</h2></Link>
             <section className={css.movie_posters_box_intro_tertiary} key={'moviePostersBox'}>
                 {clickableMovies}
             </section>

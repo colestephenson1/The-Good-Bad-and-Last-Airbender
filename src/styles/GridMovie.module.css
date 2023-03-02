@@ -3,15 +3,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e1c196;
+    background-color: #80d4f6;
     height: 50vh;
     width: 25vw;
-    border: 1px solid black;
+    border: 1px solid navy;
     border-radius: 5%;
 }
 
 .poster {
     height: 35vh;
     width: 15vw;
-    border: 1px solid black;
+    border: 1px solid navy;
 }

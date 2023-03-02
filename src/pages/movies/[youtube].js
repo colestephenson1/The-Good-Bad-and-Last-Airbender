@@ -23,7 +23,7 @@ const MovieDetails = ({ movie }) => {
               <text>
                 Lead Actors:
                 {lead_actors.reduce((actors, actor) => {
-                  return lead_actors.indexOf(actor) === lead_actors.length -1 ? actors + ` ${actor}` : actors + ` ${actor},`
+                  return lead_actors.indexOf(actor) === lead_actors.length -1 ? actors + ` and ${actor}` : actors + ` ${actor},`
                 }, "" )}
               </text>
               <text>
