@@ -14,3 +14,8 @@
     border-style: groove;
     border: 1px solid black;
 }
+
+.title:hover {
+    color: white;
+    font-weight: 700;
+}

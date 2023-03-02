@@ -9,7 +9,7 @@ const GridMovie = ({movie}) => {
   return (
     <div className={css.grid_movie}>
         <img src={poster} className={css.poster}/>
-        <Link href={`/movies/${youtube}`}><h3>{title} &#11088;{rating}/10</h3></Link>
+        <Link href={`/movies/${youtube}`}><h3 className={css.grid_movie_title}>{title} &#11088;{rating}/10</h3></Link>
     </div> 
   )
 }

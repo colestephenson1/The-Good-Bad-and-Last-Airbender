@@ -17,11 +17,14 @@ const Rankings = () => {
   const fetchMovies = async() => {
     const resData = await fetch('https://gbla-api.vercel.app/movies')
     const data = await resData.json();
+    let count = 0;
     setMovieComponents(data.sort((a, b) => b.rating - a.rating).map(movie => {
+      count ++
       return (
         <MovieFormattedForRanking
           movie={movie}
           key={movie.id}
+          count={count}
         />
       )
     }))

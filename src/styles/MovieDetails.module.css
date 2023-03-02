@@ -13,10 +13,10 @@
 .info_box{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 50vw;
-    height: 50vh;
+    height: 70vh;
 }
 
 .movie_poster {
@@ -50,4 +50,8 @@
     align-items: center;
     height: 78vh;
     width: 100vw;
+}
+
+.link_to_details:hover {
+    color: white;
 }
