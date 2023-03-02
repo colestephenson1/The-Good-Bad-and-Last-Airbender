@@ -13,7 +13,7 @@
   - [Contributors](#contributors)
 
 ## Introduction
-  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies!
+  - The goal of the project is to demonstrate the fundementals of Next.js in the format of my personal passion, movies! I wanted to bring my newly established skills in Next to an application that users could get active benefit from, even if it's movie reviews from an unqualified movies reviewer. That being said, the project utilizes multiple endpoints with server-side rendering, and is much more performant than React applications I have developed in the past. Enjoy!
 
 ## Technologies
   - Next.js
@@ -21,31 +21,30 @@
   - Node.js
   - Express.js
   - Cypress
-  - Router
   - HTML
   - CSS
 
 ## Features
-- Listen to the songs within the application through an embedded Spotify player.
-- Filter songs in a decade by mood.
-- Find out more information about the artist/song.
+- Click on a movie to see additional details (trailer, lead actors, director, release year, runtime, review, rating)
+- Filter the movies by genre with NavBar button functionality
+- See a fully compiled ratings list of all the movies.
 
 ## Possible Future Extensions
-- Create a favorites list which can exported to Spotify as a playlist.
+- Have the movies by genre and the ratings list be filterable by release date (oldest to youngest and vice versa)
+- Connect to a relational database so that users can have a login, favorite movies, and contribute their own reviews.
 
 ## Set Up
-- Deployed application: https://one-hit-wonderz-one.vercel.app/
-- Deployed API: https://new-ohw-api.vercel.app/songs
+- Deployed application: https://the-good-bad-and-last-airbender.vercel.app/
+- Deployed API: https://gbla-api.vercel.app/
 
 ## Organizational Resources
-- [github project board](https://github.com/users/colestephenson1/projects/1)
-- [data collection google doc](https://docs.google.com/document/d/1MzZpRZ_WjslrsORh_CPJMzDTMtxBnPnhwczY1wrO8eg/edit)
 - Wireframe ![gbla_wireframe](https://user-images.githubusercontent.com/102827145/215295636-d871efbf-344d-4364-8449-750917a10405.png)
 
 ## Sources
   - [MDN](http://developer.mozilla.org/en-US/)
   - [W3Schools](https://www.w3schools.com/)
   - [CSS-TRICKS](https://css-tricks.com/)
+  - [Udemy](https://www.udemy.com/course/awesome-nextjs-with-react-and-node-amazing-portfolio-app/)
  
 
 ## Contributors
