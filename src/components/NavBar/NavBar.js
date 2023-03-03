@@ -5,8 +5,7 @@ import css from '../../styles/NavBar.module.css';
 const NavBar = () => {
   return (
     <div className={css.navbar}>
-        <Link href="/"><h1>The Good, The Bad, and The Last Airbender</h1></Link>
-        {/* <Link href="/"><img src={logo}/></Link> */}
+        <Link href="/"><h1 className={css.app_title}>The Good, The Bad, and The Last Airbender</h1></Link>
         <section className={css.navbar_options}>
             <Link href='/moviesByGenre/Action'><h3 className={css.navbar_option}>Action</h3></Link>
             <Link href='/moviesByGenre/Comedy'><h3 className={css.navbar_option}>Comedy</h3></Link>
