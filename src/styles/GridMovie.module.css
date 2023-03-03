@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2.6vh;
     align-items: center;
     background-color: #80d4f6;
     height: 50vh;
@@ -20,3 +22,9 @@
     color: white;
     font-weight: 700;
 }
+
+/* @media (max-width: 786px){
+    .poster{
+
+    }
+} */

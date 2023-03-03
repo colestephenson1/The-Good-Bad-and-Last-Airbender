@@ -20,6 +20,7 @@
     border-radius: 50%;
     animation-name: slideInLeft;
     animation-duration: 1s;
+    height: 65vh;
 }
 
 .homepage {
@@ -80,6 +81,7 @@
 }
 
 .intro_scroll_link {
+    font-size: 4vh;
     text-decoration: none;
     transition-property: transform;
     transition-duration: 0.3s;
@@ -98,6 +100,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2.6vh;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out; 
@@ -141,4 +144,8 @@
     animation-name: motionUp;
     animation-duration: 1s;
     animation-iteration-count: 2;
+}
+
+.tertiary_link {
+    font-size: 3.2vh;
 }

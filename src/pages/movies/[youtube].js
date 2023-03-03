@@ -11,36 +11,36 @@ const MovieDetails = ({ movie }) => {
       <Layout>
         <section className={css.movie_details_box} >
           <section className={css.trailer_and_link}>
-            <iframe src={`https://www.youtube.com/embed/${youtube}`} className={css.trailer}></iframe>
+            <iframe src={`https://www.youtube.com/embed/${youtube}`} className={css.trailer} title={`${title} trailer`}></iframe>
             <Link href="#greater-details-box"><h2 className={css.link_to_details}>&#8595;</h2></Link>
           </section>
           <section id="greater-details-box"className={css.greater_details_box}>
-            <img src={poster} className={css.movie_poster}/>
+            <img src={poster} className={css.movie_poster} alt={`${title} poster`}/>
             <section className={css.info_box}>
               <h3>
                 {title}
               </h3>
-              <text>
+              <p>
                 Lead Actors:
                 {lead_actors.reduce((actors, actor) => {
                   return lead_actors.indexOf(actor) === lead_actors.length -1 ? actors + ` and ${actor}` : actors + ` ${actor},`
                 }, "" )}
-              </text>
-              <text>
+              </p>
+              <p>
                 Director: {director}
-              </text>
-              <text>
+              </p>
+              <p>
                 Release Year: {release_year}
-              </text>
-              <text>
+              </p>
+              <p>
                 Runtime: {runtime} minutes
-              </text>
-              <text>
+              </p>
+              <p>
                 {review} 
-              </text>
-              <text>
+              </p>
+              <p>
                 Rating: {rating}/10
-              </text>
+              </p>
             </section>
           </section>
         </section>
@@ -48,8 +48,8 @@ const MovieDetails = ({ movie }) => {
     )
 }
 
-export const getServerSideProps = async(context) => {
-    const resData = await fetch(`https://gbla-api.vercel.app/findmovie/${context.params.youtube}`)
+export const getServerSideProps = async(conp) => {
+    const resData = await fetch(`https://gbla-api.vercel.app/findmovie/${conp.params.youtube}`)
     const selectedMovie = await resData.json();
 
       return {
