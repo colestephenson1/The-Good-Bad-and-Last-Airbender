@@ -48,8 +48,23 @@ const MovieDetails = ({ movie }) => {
     )
 }
 
-export const getServerSideProps = async(conp) => {
-    const resData = await fetch(`https://gbla-api.vercel.app/findmovie/${conp.params.youtube}`)
+export const getStaticPaths = async() => {
+  const resData = await fetch('https://gbla-api.vercel.app/movies')
+  const data = await resData.json();
+  const paths = data.map(movie => {
+    return {
+      params: {youtube: movie.youtube}
+    }
+  })
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps = async(context) => {
+    const resData = await fetch(`https://gbla-api.vercel.app/findmovie/${context.params.youtube}`)
     const selectedMovie = await resData.json();
 
       return {

@@ -19,11 +19,38 @@ const FilteredMovies = ({ movies }) => {
       </section>
     </Layout>
   )
+};
+
+
+export const getStaticPaths = async() => {
+
+  const resData = await fetch('https://gbla-api.vercel.app/movies')
+  const data = await resData.json()
+  const dynamicGenres = data.reduce((allGenres, movie) => {
+    movie.genres.forEach(genre => {
+      if (!allGenres.includes(genre)) {
+        allGenres.push(genre)
+      }
+    })
+    return allGenres;
+  }, [])
+
+
+  const paths = dynamicGenres.map(genre => {
+    return {
+      params: {genre: genre}
+    }
+  })
+
+  
+  return {
+    paths,
+    fallback: false
+  }
 }
 
-
-export const getServerSideProps = async(context) => {
-    const resData = await fetch(`https://gbla-api.vercel.app/movies/${context.params.genre}`)
+export const getStaticProps = async(context) => {
+    const resData = await fetch(`https://gbla-api.vercel.app/movies/${context.params.genre}`);
     const data = await resData.json();
   
       return {
@@ -31,6 +58,6 @@ export const getServerSideProps = async(context) => {
           movies: data
       }
     } 
-}
+};
 
 export default FilteredMovies;
