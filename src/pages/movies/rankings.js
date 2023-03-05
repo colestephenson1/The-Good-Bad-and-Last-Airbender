@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../components/Layout/Layout'
+import Layout from '../../components/Layout/Layout';
 import MovieFormattedForRanking from '../../components/MovieFormattedForRanking/MovieFormattedForRanking';
 import { useEffect, useState }from 'react';
 import css from '../../styles/Rankings.module.css';
@@ -38,7 +38,7 @@ const Rankings = () => {
       </section>
     </Layout>
   )
-}
+};
 
 
 

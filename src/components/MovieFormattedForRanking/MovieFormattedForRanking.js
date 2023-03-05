@@ -14,6 +14,6 @@ const MovieFormattedForRanking = ({movie, count}) => {
         <h3 className={css.rating}>&#11088;{rating}/10</h3>
     </div>
   )
-}
+};
 
-export default MovieFormattedForRanking
+export default MovieFormattedForRanking;

@@ -47,7 +47,7 @@ export const getStaticPaths = async() => {
     paths,
     fallback: false
   }
-}
+};
 
 export const getStaticProps = async(context) => {
     const resData = await fetch(`https://gbla-api.vercel.app/movies/${context.params.genre}`);

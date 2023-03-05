@@ -18,6 +18,6 @@ const NavBar = () => {
         </section>
     </div>
   )
-}
+};
 
 export default NavBar;

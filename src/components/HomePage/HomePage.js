@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import css from '../../styles/HomePage.module.css';
 import Link from "next/link";
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
@@ -15,7 +15,7 @@ const HomePage = ({movies}) => {
         return(
             <Link href={`/movies/${movie.youtube}`} key={movie.youtube}><img key={movie.poster} className={css.tertiary_intro_movie_poster} src={movie.poster} alt={`${movie.title} poster`}/></Link>
         )
-    })  
+    });  
 
 
   return (
@@ -65,4 +65,4 @@ const HomePage = ({movies}) => {
   )
 }
 
-export default HomePage
+export default HomePage;
