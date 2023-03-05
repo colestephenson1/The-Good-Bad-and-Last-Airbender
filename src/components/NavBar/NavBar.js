@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 import css from '../../styles/NavBar.module.css';
 
 const NavBar = () => {
@@ -20,4 +20,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;
