@@ -63,6 +63,6 @@ const HomePage = ({movies}) => {
         </section>
     </div>
   )
-}
+};
 
 export default HomePage;

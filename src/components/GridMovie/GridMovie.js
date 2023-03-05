@@ -4,7 +4,7 @@ import css from '../../styles/GridMovie.module.css';
 
 const GridMovie = ({movie}) => {
     
-    const {poster, title, rating, youtube} = movie;
+  const {poster, title, rating, youtube} = movie;
 
   return (
     <div className={css.grid_movie}>

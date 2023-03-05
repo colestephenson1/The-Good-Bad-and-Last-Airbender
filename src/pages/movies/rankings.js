@@ -28,7 +28,7 @@ const Rankings = () => {
         />
       )
     }))
-  }
+  };
 
   return (
     <Layout>
