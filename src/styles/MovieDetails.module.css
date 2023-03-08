@@ -39,7 +39,7 @@
 }
 
 .trailer {
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
 }
 
@@ -50,6 +50,10 @@
     align-items: center;
     height: 78vh;
     width: 100vw;
+}
+
+.trailer_title {
+    font-size: 3.5vh;
 }
 
 .link_to_details:hover {

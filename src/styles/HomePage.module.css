@@ -9,11 +9,6 @@
     to {transform: translatex(0vw);}
 }
 
-@keyframes motionUp {
-    from {transform: translatey(1vh);}
-    to {transform: translatey(0vh);}
-}
-
 
 .handsome_mf {
     margin-top: 2rem;
@@ -141,9 +136,6 @@
 
 .tertiary_link:hover{
     color: #2f3d53;
-    animation-name: motionUp;
-    animation-duration: 1s;
-    animation-iteration-count: 2;
 }
 
 .tertiary_link {
