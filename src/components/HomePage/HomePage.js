@@ -26,7 +26,6 @@ const HomePage = ({movies}) => {
                 <Link href="#secondary_section" scroll={false}><h2 className={css.intro_scroll_link}>Hi! My name is Cole. I love to code. &#8595;</h2></Link>
                 <section className={css.links}>
                     <a
-                        className={css.external_link}
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.linkedin.com/in/cole-stephenson-99688a240/"
@@ -34,7 +33,6 @@ const HomePage = ({movies}) => {
                             <AiFillLinkedin className={css.external_link} />
                     </a>
                     <a
-                        className={css.external_link}
                         target="_blank"
                         rel="noreferrer"
                         href="https://github.com/colestephenson1"
