@@ -29,4 +29,9 @@ describe('homepage', () => {
     .should('have.attr', 'src').should('include', "https://i5.walmartimages.com/asr/06ec9422-7ea9-42ee-b7da-499dd3e1ce2f.9f0ef34df5ae1895cb0d1b4e083b8496.jpeg")
   })
 
+  it('should able to click a secondary link to head to the bottom of the homepage and see 3 posters and a link to the top', () => {
+    cy.get('[class*=secondary_link]').click()
+    .url().should('eq', 'https://the-good-bad-and-last-airbender.vercel.app/#tertiary_section')
+  })
+
 })
