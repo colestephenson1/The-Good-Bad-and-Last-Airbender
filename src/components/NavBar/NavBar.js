@@ -4,7 +4,7 @@ import css from '../../styles/NavBar.module.css';
 
 const NavBar = () => {
   return (
-    <div className={css.navbar}>
+    <div className={css.navbar} id="navbar">
         <Link href="/"><h1 className={css.app_title}>The Good, The Bad, and The Last Airbender</h1></Link>
         <section className={css.navbar_options}>
             <Link href='/moviesByGenre/Action'><p className={css.navbar_option}>Action</p></Link>
