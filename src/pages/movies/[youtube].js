@@ -30,7 +30,7 @@ const MovieDetails = ({ movie }) => {
             <p className='director'>
               Director: {director}
             </p>
-            <p classname='release_year'>
+            <p className='release_year'>
               Release Year: {release_year}
             </p>
             <p className='runtime'>
