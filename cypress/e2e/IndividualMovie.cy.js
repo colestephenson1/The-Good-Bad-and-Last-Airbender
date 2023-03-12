@@ -4,7 +4,7 @@ describe('movie', () => {
         cy.intercept('GET', "https://gbla-api.vercel.app/findmovie/wBDLRvjHVOY", {fixture: 'singlemovie'})
     })
 
-    it('should be be able to find and click a movie from the homepage', () => {
+    it('should be be able to find and click a movie from the homepage, and initially see a movie title and trailer', () => {
         cy.get('[class*=tertiary_intro_movie_poster]')
         .first()
         .click()
@@ -15,5 +15,23 @@ describe('movie', () => {
         cy.get('[class*=movie_trailer]')
         .should('be.visible')
         .should('have.attr', 'src')
+        .should('eq', 'https://www.youtube.com/embed/42_UHhpq530')
+    })
+
+    it('should be able to click an arrow and navigate down to a section with more details about the movie with a poster', () => {
+        cy.get('[class*=tertiary_intro_movie_poster]')
+        .first()
+        .click()
+        cy.get('[class*=link_to_details]')
+        .should('be.visible')
+        .click()
+        cy.get('[class*=movie_poster]')
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('eq', "https://m.media-amazon.com/images/I/61zFh8+gdrL.jpg")
+        cy.get('[class*=info_box]')
+        .should('be.visible')
+        .contains('The Lighthouse')
+        .contains('Lead Actors')
     })
 })

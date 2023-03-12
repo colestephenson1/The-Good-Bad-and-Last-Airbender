@@ -18,28 +18,28 @@ const MovieDetails = ({ movie }) => {
         <section id="greater-details-box"className={css.greater_details_box}>
           <img src={poster} className={css.movie_poster} alt={`${title} poster`}/>
           <section className={css.info_box}>
-            <h3>
+            <h3 className='title_line'>
               {title}
             </h3>
-            <p>
+            <p className='lead_actors'>
               Lead Actors:
               {lead_actors.reduce((actors, actor) => {
                 return lead_actors.indexOf(actor) === lead_actors.length -1 ? actors + ` and ${actor}` : actors + ` ${actor},`
               }, "" )}
             </p>
-            <p>
+            <p className='director'>
               Director: {director}
             </p>
-            <p>
+            <p classname='release_year'>
               Release Year: {release_year}
             </p>
-            <p>
+            <p className='runtime'>
               Runtime: {runtime} minutes
             </p>
-            <p>
+            <p className='review'>
               {review} 
             </p>
-            <p>
+            <p className='rating'>
               Rating: {rating}/10
             </p>
           </section>
