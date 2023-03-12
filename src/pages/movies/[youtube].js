@@ -15,7 +15,7 @@ const MovieDetails = ({ movie }) => {
           <iframe src={`https://www.youtube.com/embed/${youtube}`} className={css.movie_trailer} title={`${title} trailer`}></iframe>
           <Link href="#greater-details-box"><h2 className={css.link_to_details}>&#8595;</h2></Link>
         </section>
-        <section id="greater-details-box"className={css.greater_details_box}>
+        <section id="greater-details-box" className={css.greater_details_box}>
           <img src={poster} className={css.movie_poster} alt={`${title} poster`}/>
           <section className={css.info_box}>
             <h3 className='title_line'>
