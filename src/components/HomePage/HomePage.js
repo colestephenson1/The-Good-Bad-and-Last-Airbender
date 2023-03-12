@@ -46,8 +46,8 @@ const HomePage = ({movies}) => {
         </section>
         <section id="secondary_section" className={css.intro_section2}>
             <section className={css.intro_section2_text_box}>
-                <Link href="#tertiary_section" scroll={false}>
-                    <h2 className={css.secondary_link}>{string}</h2>
+                <Link href="#tertiary_section" scroll={false} className='secondary_link'>
+                    <h2>{string}</h2>
                     <h2>{string2}</h2>
                     <h2>{string3}</h2>
                     <h2>&#8595;</h2>
