@@ -53,4 +53,12 @@ describe('movie', () => {
         .contains('Rating: 9.5/10')
         .should('be.visible')
     })
+
+    it('should be able to click the title button and return home', () => {
+        cy.get('[class*=app_title]')
+        .should('be.visible')
+        .click()
+        .url()
+        .should('eq', 'https://the-good-bad-and-last-airbender.vercel.app/' )
+    })
 })
